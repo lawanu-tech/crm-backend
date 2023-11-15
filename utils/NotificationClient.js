@@ -18,7 +18,7 @@ exports.sendEmail = (ticketId, subject, content, emailIds, requester) => {
     /**
      * We can keep this hardcoded URL in the configs files
      */
-    client.post("https://notification-service-k1yn.onrender.com/notificationService/api/v1/notification", args, function (data, response) {
+    client.post("https://crm-notification-service.onrender.com/notificationService/api/v1/notification", args, function (data, response) {
         console.log("Request sent");
         console.log(data);
     });
